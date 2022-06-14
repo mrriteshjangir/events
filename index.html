@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+
+    <style>
+        #bulb{
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body onload="offf()">
+    
+    <!-- <p id="p">I'm Here by HTML</p>
+
+    <button onclick="change()">Change</button> -->
+
+
+    <img id="bulb">
+
+    <button onclick="offf()">off</button>
+
+    <button onclick="onn()">on</button>
+
+    <script>
+        function change(){
+            var abc = document.getElementById("p");
+
+            abc.innerHTML = "I'm Here by JavaScript";
+
+            // console.log(abc);
+        }
+
+        function onn(){
+            var img = document.getElementById("bulb");
+
+            img.src = "https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg";
+        }
+
+        function offf(){
+            var img = document.getElementById("bulb");
+
+            img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gluehlampe_01_KMJ.png/640px-Gluehlampe_01_KMJ.png";
+        }
+
+    </script>
+</body>
+</html>
